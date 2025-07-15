@@ -14,23 +14,7 @@ With this project, I learned how to:
 - Set up a user interface for predictions
 
 ## Project Structure
-Text-Summarizer/
-├── .github/workflows/        # CI/CD pipeline configuration using GitHub Actions
-├── config/                   # YAML configuration files (paths, parameters)
-├── logs/                     # Custom logging output with timestamps and log levels
-├── research/                 # Jupyter notebooks for experimentation and prototyping
-├── src/textSummarizer/       # Core source code package
-│   ├── components/           # Pipeline components: ingestion, validation, training, evaluation
-│   ├── config/               # Configuration management using ConfigBox
-│   ├── constants.py          # Project-wide constant definitions
-│   ├── pipeline/             # Orchestrator scripts to run each pipeline stage
-│   └── utils/                # Utility functions (file handling, logging, exceptions)
-├── app.py                    # Optional FastAPI or Streamlit app for prediction
-├── Dockerfile                # Docker configuration for containerized deployment
-├── main.py                   # Main entry point to run the full pipeline
-├── requirements.txt          # Python dependencies for the project
-├── setup.py                  # Setup script for packaging the module
-└── README.md                 # Project overview and documentation (you’re here!)
+<pre> ```plaintext Text-Summarizer/ ├── .github/workflows/ # CI/CD pipeline configuration using GitHub Actions ├── config/ # YAML configuration files (paths, parameters) ├── logs/ # Custom logging output with timestamps and log levels ├── research/ # Jupyter notebooks for experimentation and prototyping ├── src/textSummarizer/ # Core source code package │ ├── components/ # Pipeline components: ingestion, validation, training, evaluation │ ├── config/ # Configuration management using ConfigBox │ ├── constants.py # Project-wide constant definitions │ ├── pipeline/ # Orchestrator scripts to run each pipeline stage │ └── utils/ # Utility functions (file handling, logging, exceptions) ├── app.py # Optional FastAPI or Streamlit app for prediction ├── Dockerfile # Docker configuration for containerized deployment ├── main.py # Main entry point to run the full pipeline ├── requirements.txt # Python dependencies for the project ├── setup.py # Setup script for packaging the module └── README.md # Project overview and documentation (you’re here!) ``` </pre>
 
 ## Main Components: 
 Data Ingestion: Downloads and extracts datasets from a URL.
