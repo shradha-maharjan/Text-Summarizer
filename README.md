@@ -22,16 +22,16 @@ Text-Summarizer/
 ├── research/                 # Jupyter notebooks for experimentation and prototyping
 ├── src/textSummarizer/       # Core source code package
 │   ├── components/           # Pipeline components: ingestion, validation, training, evaluation
-│   ├── config/               # Configuration management using ConfigBox
+│   ├── config/               # Configuration management 
 │   ├── constants.py          # Project-wide constant definitions
 │   ├── pipeline/             # Orchestrator scripts to run each pipeline stage
 │   └── utils/                # Utility functions (file handling, logging, exceptions)
-├── app.py                    # Optional FastAPI or Streamlit app for prediction
+├── app.py                    # Optional FastAPI for prediction
 ├── Dockerfile                # Docker configuration for containerized deployment
 ├── main.py                   # Main entry point to run the full pipeline
 ├── requirements.txt          # Python dependencies for the project
 ├── setup.py                  # Setup script for packaging the module
-└── README.md                 # Project overview and documentation (you’re here!)
+└── README.md                 
 ```
 ## Main Components: 
 Data Ingestion: Downloads and extracts datasets from a URL.
