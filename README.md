@@ -64,4 +64,3 @@ docker build -t text-summarizer .
 docker run -p 8080:8080 text-summarizer
 
 
-897722688559.dkr.ecr.us-west-2.amazonaws.com/text
