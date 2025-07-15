@@ -15,24 +15,24 @@ With this project, I learned how to:
 
 ## Project Structure
 Text-Summarizer/
-├── .github/workflows/ # CI/CD pipeline configuration
-├── config/ # YAML config files (paths, hyperparams)
-├── logs/ # Custom logs with timestamps
-├── research/ # Jupyter notebooks for experiments
-├── src/textSummarizer/
-│ ├── components/ # Pipeline stages (ingestion, validation, training, etc.)
-│ ├── config/ # Config box & management
-│ ├── constants.py # Global constants
-│ ├── pipeline/ # Orchestration code
-│ ├── utils/ # Reusable utilities (file ops, logging)
-├── app.py # Web app interface (optional)
-├── Dockerfile # For containerized deployment
-├── main.py # Entry point for training pipeline
-├── requirements.txt # Python dependencies
-├── setup.py # Package installer
-└── README.md
+├── .github/workflows/        # CI/CD pipeline configuration using GitHub Actions
+├── config/                   # YAML configuration files (paths, parameters)
+├── logs/                     # Custom logging output with timestamps and log levels
+├── research/                 # Jupyter notebooks for experimentation and prototyping
+├── src/textSummarizer/       # Core source code package
+│   ├── components/           # Pipeline components: ingestion, validation, training, evaluation
+│   ├── config/               # Configuration management using ConfigBox
+│   ├── constants.py          # Project-wide constant definitions
+│   ├── pipeline/             # Orchestrator scripts to run each pipeline stage
+│   └── utils/                # Utility functions (file handling, logging, exceptions)
+├── app.py                    # Optional FastAPI or Streamlit app for prediction
+├── Dockerfile                # Docker configuration for containerized deployment
+├── main.py                   # Main entry point to run the full pipeline
+├── requirements.txt          # Python dependencies for the project
+├── setup.py                  # Setup script for packaging the module
+└── README.md                 # Project overview and documentation (you’re here!)
 
-## Main Compnonents: 
+## Main Components: 
 Data Ingestion: Downloads and extracts datasets from a URL.
 
 Data Validation: Checks for required files and validates file structure.
